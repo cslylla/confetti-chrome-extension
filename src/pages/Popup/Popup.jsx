@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/img/logo.svg';
+import icon from '../../assets/img/icon-128.png';
 import './Popup.css';
 
 const Popup = () => {
@@ -27,7 +27,7 @@ const Popup = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={icon} className="App-logo" alt="logo" />
         <p>Confetti Extension</p>
         <button className="confetti-btn" onClick={handlePopConfetti}>
           Pop confetti

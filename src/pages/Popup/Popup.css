@@ -7,7 +7,8 @@
   text-align: center;
   height: 100%;
   padding: 10px;
-  background-color: #282c34;
+  background-color: #402e32;
+  color: #dfe0df;
 }
 
 .App-logo {
@@ -17,7 +18,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
   }
 }
 
@@ -28,11 +29,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: def0df;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #dba11c;
 }
 
 .confetti-btn {
@@ -40,8 +41,8 @@
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
-  color: #282c34;
-  background: linear-gradient(135deg, #61dafb 0%, #ff6b9d 100%);
+  color: #dfe0df;
+  background: linear-gradient(135deg, #dba11c 0%, #11A797 90%);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -59,10 +60,14 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    /* Grows to 120% size */
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
